@@ -153,10 +153,27 @@
     </main>
     
     <script>
-        // Get CCA name from URL parameter
+        // Get parameters from URL
         const params = new URLSearchParams(window.location.search);
-        const ccaName = params.get('cca') || 'Your CCA';
-        document.getElementById('cca-name').textContent = decodeURIComponent(ccaName);
+        const type = params.get('type') || 'cca';
+        const name = params.get('cca') || params.get('name') || 'Your CCA';
+        
+        // Update content based on type
+        const ccaNameElement = document.getElementById('cca-name');
+        const successMessage = document.querySelector('p.text-xl');
+        const pageTitle = document.querySelector('title');
+        
+        if (type === 'session') {
+            ccaNameElement.textContent = decodeURIComponent(name);
+            successMessage.textContent = "You've successfully joined the session";
+            pageTitle.textContent = "Session Joined - CCA Connect";
+            document.querySelector('h1').textContent = "🎉 You're In!";
+        } else {
+            ccaNameElement.textContent = decodeURIComponent(name);
+            successMessage.textContent = "You've successfully joined";
+            pageTitle.textContent = "Join Successful - CCA Connect";
+            document.querySelector('h1').textContent = "🎉 Welcome!";
+        }
         
         // Confetti animation
         function createConfetti() {

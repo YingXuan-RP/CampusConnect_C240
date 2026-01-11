@@ -158,6 +158,7 @@
                 <a href="#chatbot" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-cca-lime rounded-lg transition-colors duration-200">
                     Chatbot
                 </a>
+
             </div>
         </div>
     </nav>
@@ -185,11 +186,11 @@
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
-                    <a href="#chatbot" class="bg-cca-lime text-cca-dark-blue font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-lime">
+                    <button onclick="openBotpressChat()" class="bg-cca-lime text-cca-dark-blue font-bold py-3 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-lime">
                         Start Chatting
-                    </a>
-                    <a href="#squad" class="bg-cca-purple text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-purple">
-                        Join Your Squad
+                    </button>
+                    <a href="ccas.html" class="bg-cca-purple text-white font-bold py-3 px-8 rounded-lg hover:bg-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-purple">
+                        Explore CCAs
                     </a>
                 </div>
             </div>
@@ -264,54 +265,6 @@
             </div>
         </section>
         
-        <!-- My CCA Squad Section -->
-        <section id="squad" class="py-20 bg-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-cca-dark-blue mb-4 text-center">
-                    My CCA Squad
-                </h2>
-                <p class="text-center text-gray-600 mb-12 text-lg">
-                    Connect with your club members and organize events effortlessly
-                </p>
-                
-                <!-- Squad Feature Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Card 1: Find Your Crew -->
-                    <a href="ccas.html" class="bg-gradient-to-br from-cca-light-blue to-cca-blue p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-within:ring-2 focus-within:ring-cca-lime cursor-pointer block">
-                        <div class="w-12 h-12 bg-cca-lime rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-cca-dark-blue" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v4h8v-4zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Find Your Crew</h3>
-                        <p class="text-gray-100">Discover and connect with club members who share your interests</p>
-                    </a>
-                    
-                    <!-- Card 2 -->
-                    <div class="bg-gradient-to-br from-cca-purple to-pink-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-within:ring-2 focus-within:ring-cca-lime">
-                        <div class="w-12 h-12 bg-cca-lime rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-cca-dark-blue" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Organize Events</h3>
-                        <p class="text-gray-100">Plan and schedule CCA meetups, activities, and celebrations</p>
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="bg-gradient-to-br from-cca-lime to-green-500 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-within:ring-2 focus-within:ring-cca-purple">
-                        <div class="w-12 h-12 bg-cca-purple rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M1 3a1 1 0 011-1h16a1 1 0 011 1v1a1 1 0 01-1 1H2a1 1 0 01-1-1V3zm0 4a1 1 0 011-1h16a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V7zm0 11a1 1 0 011-1h16a1 1 0 011 1v1a1 1 0 01-1 1H2a1 1 0 01-1-1v-1z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-cca-dark-blue mb-2">Stay Updated</h3>
-                        <p class="text-gray-800">Get real-time notifications about club news and announcements</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- Chatbot Section -->
         <section id="chatbot" class="py-20 bg-gradient-to-br from-cca-dark-blue to-cca-blue">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -333,9 +286,9 @@
                         <p class="text-gray-100 text-sm mt-1">Online and ready to chat</p>
                     </div>
                     
-                    <!-- Chat Messages -->
-                    <div class="p-6 space-y-4 bg-gray-50 min-h-96 flex flex-col">
-                        <!-- Bot Message -->
+                    <!-- Chat Messages Container -->
+                    <div id="botpress-chat-messages" class="p-6 space-y-4 bg-gray-50 min-h-96 max-h-96 overflow-y-auto flex flex-col">
+                        <!-- Initial Bot Message -->
                         <div class="flex gap-3">
                             <div class="w-8 h-8 bg-cca-blue text-white rounded-full flex items-center justify-center flex-shrink-0">
                                 <span class="text-xs font-bold">AI</span>
@@ -344,52 +297,19 @@
                                 <p class="text-sm">Hey there! 👋 I'm your CCA Connect Bot. How can I help you today?</p>
                             </div>
                         </div>
-                        
-                        <!-- User Message -->
-                        <div class="flex gap-3 justify-end">
-                            <div class="bg-cca-lime text-cca-dark-blue rounded-lg rounded-tr-none p-4 max-w-xs">
-                                <p class="text-sm font-semibold">When's the next meeting?</p>
-                            </div>
-                            <div class="w-8 h-8 bg-cca-lime text-cca-dark-blue rounded-full flex items-center justify-center flex-shrink-0">
-                                <span class="text-xs font-bold">U</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Bot Message -->
-                        <div class="flex gap-3">
-                            <div class="w-8 h-8 bg-cca-blue text-white rounded-full flex items-center justify-center flex-shrink-0">
-                                <span class="text-xs font-bold">AI</span>
-                            </div>
-                            <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 max-w-xs">
-                                <p class="text-sm">Your next CCA meeting is <strong>Friday at 4 PM</strong> in Room 103! 🎉</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Spacer -->
-                        <div class="flex-grow"></div>
-                        
-                        <!-- Typing Indicator -->
-                        <div class="flex gap-3">
-                            <div class="w-8 h-8 bg-cca-blue text-white rounded-full flex items-center justify-center flex-shrink-0">
-                                <span class="text-xs font-bold">AI</span>
-                            </div>
-                            <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 flex gap-2">
-                                <span class="w-2 h-2 bg-white rounded-full animate-bounce"></span>
-                                <span class="w-2 h-2 bg-white rounded-full animate-bounce delay-100"></span>
-                                <span class="w-2 h-2 bg-white rounded-full animate-bounce delay-200"></span>
-                            </div>
-                        </div>
                     </div>
-                    
+
                     <!-- Chat Input -->
                     <div class="p-4 bg-white border-t border-gray-200">
                         <div class="flex gap-3">
-                            <input 
-                                type="text" 
-                                placeholder="Ask me anything..." 
+                            <input
+                                type="text"
+                                id="botpress-chat-input"
+                                placeholder="Ask me anything..."
                                 class="flex-1 px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-cca-lime focus:outline-none transition-colors duration-200"
                                 aria-label="Chat message input">
-                            <button 
+                            <button
+                                id="botpress-send-btn"
                                 class="bg-cca-purple text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors duration-200 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-purple"
                                 aria-label="Send message">
                                 Send
@@ -442,7 +362,7 @@
                             </p>
                             
                             <button class="w-full bg-cca-light-blue text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-light-blue">
-                                Join Session
+                                <a href="success.html?type=session&name=Debate%20Championship" class="block w-full h-full text-center">Join Session</a>
                             </button>
                         </div>
                     </div>
@@ -477,7 +397,7 @@
                             </p>
                             
                             <button class="w-full bg-cca-purple text-white font-bold py-3 px-4 rounded-lg hover:bg-pink-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-purple">
-                                Join Session
+                                <a href="success.html?type=session&name=Robotics%20Workshop" class="block w-full h-full text-center">Join Session</a>
                             </button>
                         </div>
                     </div>
@@ -512,7 +432,7 @@
                             </p>
                             
                             <button class="w-full bg-cca-lime text-cca-dark-blue font-bold py-3 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-lime">
-                                Join Session
+                                <a href="success.html?type=session&name=Art%20Exhibition%20Opening" class="block w-full h-full text-center">Join Session</a>
                             </button>
                         </div>
                     </div>
@@ -565,111 +485,6 @@
             </div>
         </section>
         
-        <!-- Your CCA Chatbot Section -->
-        <section id="chatbot-interface" class="py-20 bg-gradient-to-br from-gray-50 to-cca-light">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-cca-dark-blue mb-4 text-center">
-                    Your CCA Chatbot
-                </h2>
-                <p class="text-center text-gray-600 mb-12 text-lg">
-                    Always available to help you navigate your CCA journey
-                </p>
-                
-                <!-- Full-Width Chatbot Card -->
-                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                    <!-- Chatbot Header -->
-                    <div class="bg-gradient-to-r from-cca-light-blue via-cca-purple to-cca-lime p-8 sm:p-10">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-                                <svg class="w-8 h-8 text-cca-blue" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z"></path>
-                                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl sm:text-3xl font-bold text-white mb-1">Ask the CCA Connect Agent</h3>
-                                <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 bg-lime-300 rounded-full animate-pulse"></span>
-                                    <p class="text-gray-100 font-semibold">Online and ready to help</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Chatbot Body -->
-                    <div class="p-8 sm:p-10 bg-white">
-                        <!-- Chat Messages Container -->
-                        <div id="chat-messages" class="min-h-96 max-h-96 overflow-y-auto mb-8 space-y-4 bg-gray-50 rounded-xl p-6">
-                            <!-- Initial Agent Message -->
-                            <div class="flex gap-3">
-                                <div class="w-8 h-8 bg-cca-light-blue text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
-                                    AI
-                                </div>
-                                <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 max-w-sm">
-                                    <p class="text-sm">👋 Hi there! I'm the CCA Connect Agent. Need help with registration, upcoming events, club information, or finding your perfect CCA match? Ask me anything!</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Quick Questions Suggestions -->
-                        <div class="mb-6 pb-6 border-b border-gray-200">
-                            <p class="text-sm font-semibold text-gray-700 mb-3">
-                                💡 Quick Questions:
-                            </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <button class="quick-question text-left px-4 py-3 bg-gray-50 rounded-lg hover:bg-cca-light-blue hover:text-white transition-all duration-200 border border-gray-200 hover:border-cca-light-blue text-sm font-medium text-gray-700" data-question="How do I join a CCA?">
-                                    How do I join a CCA?
-                                </button>
-                                <button class="quick-question text-left px-4 py-3 bg-gray-50 rounded-lg hover:bg-cca-purple hover:text-white transition-all duration-200 border border-gray-200 hover:border-cca-purple text-sm font-medium text-gray-700" data-question="When's the next meeting?">
-                                    When's the next meeting?
-                                </button>
-                                <button class="quick-question text-left px-4 py-3 bg-gray-50 rounded-lg hover:bg-cca-lime hover:text-cca-dark-blue transition-all duration-200 border border-gray-200 hover:border-cca-lime text-sm font-medium text-gray-700" data-question="What clubs are available?">
-                                    What clubs are available?
-                                </button>
-                                <button class="quick-question text-left px-4 py-3 bg-gray-50 rounded-lg hover:bg-cca-light-blue hover:text-white transition-all duration-200 border border-gray-200 hover:border-cca-light-blue text-sm font-medium text-gray-700" data-question="How to contact organizers?">
-                                    How to contact organizers?
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Chat Input Area -->
-                        <div class="space-y-4">
-                            <label for="chat-input" class="block text-sm font-semibold text-gray-700">
-                                Your Message:
-                            </label>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <input 
-                                    type="text" 
-                                    id="chat-input"
-                                    placeholder="Type your query..." 
-                                    class="flex-1 px-6 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cca-purple focus:border-transparent transition-all duration-200 text-base font-medium"
-                                    aria-label="Chat message input">
-                                <button 
-                                    id="send-btn"
-                                    class="px-8 py-4 bg-gradient-to-r from-cca-lime to-cca-purple text-white font-bold rounded-xl hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-purple text-base whitespace-nowrap flex items-center justify-center space-x-2 cursor-pointer"
-                                    aria-label="Send message">
-                                    <span>Send</span>
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7m0 0l-7 7m7-7H6"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Footer Note -->
-                    <div class="bg-gradient-to-r from-cca-dark-blue to-cca-blue px-8 sm:px-10 py-4 text-center">
-                        <p class="text-gray-100 text-sm flex items-center justify-center space-x-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zm-11-1a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 11-2 0 1 1 0 012 0zm5 0a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Get instant answers from our AI-powered CCA assistant 24/7</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- CTA Section -->
         <section class="py-16 bg-white">
             <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -680,6 +495,7 @@
                     Join thousands of students connecting, organizing, and vibing with their favorite clubs
                 </p>
                 <button 
+                    onclick="window.location.href='ccas.html'"
                     class="bg-cca-lime text-cca-dark-blue font-bold py-4 px-10 rounded-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cca-lime">
                     Get Started Now
                 </button>
@@ -777,131 +593,184 @@
             });
         });
         
-        // ===== Chatbot Functionality =====
-        const chatInput = document.getElementById('chat-input');
-        const sendBtn = document.getElementById('send-btn');
-        const chatMessages = document.getElementById('chat-messages');
-        const quickQuestionBtns = document.querySelectorAll('.quick-question');
-        
-        // Mock responses from the agent
-        const mockResponses = {
-            'How do I join a CCA?': '✨ Great question! To join a CCA, simply:\n1. Browse available clubs on our platform\n2. Click "Join" on the club you\'re interested in\n3. Attend the next meeting\n4. Connect with fellow members!\n\nWe have 50+ clubs available. Would you like me to recommend one based on your interests?',
-            
-            'When\'s the next meeting?': '📅 Our next CCA meeting is:\n\n🎤 Debate Club Finals - December 10, 2:00 PM\n🤖 Robotics Workshop - December 12, 3:30 PM\n🎨 Art Exhibition Opening - December 15, 6:00 PM\n\nVisit the "Upcoming Sessions" section to see all events and register!',
-            
-            'What clubs are available?': '🏆 We have amazing clubs including:\n\n💬 Debate Club\n🤖 Robotics Club\n🎨 Art & Design\n⚽ Sports & Fitness\n🎵 Music & Performance\n📚 Academic Excellence\n🎮 Gaming & Esports\n🌍 Culture & Languages\n\nAnd many more! Which interests you?',
-            
-            'How to contact organizers?': '📧 You can reach our CCA organizers:\n\n✉️ Email: hello@ccaconnect.com\n💬 Discord: Join our server\n📱 Instagram: @ccaconnect\n🕒 Office Hours: Mon-Fri, 3-5 PM in Room 103\n\nFeel free to reach out anytime with questions!',
-            
-            'default': '👋 That\'s a great question! Here\'s what I can help you with:\n\n• Joining CCAs\n• Upcoming events & meetings\n• Available clubs & activities\n• Contacting organizers\n• Event registration\n\nWould you like more info on any of these topics?'
-        };
-        
-        // Function to add message to chat
-        function addMessage(text, isUser = false) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `flex gap-3 ${isUser ? 'justify-end' : ''}`;
-            
-            if (isUser) {
-                messageDiv.innerHTML = `
-                    <div class="bg-cca-lime text-cca-dark-blue rounded-lg rounded-tr-none p-4 max-w-sm">
-                        <p class="text-sm">${text}</p>
+    </script>
+
+    <!-- Botpress Chat Functions -->
+    <script>
+        // Botpress chat integration for the embedded interface
+        let botpressChatReady = false;
+
+        function initBotpressEmbeddedChat() {
+            const chatInput = document.getElementById('botpress-chat-input');
+            const sendBtn = document.getElementById('botpress-send-btn');
+            const chatMessages = document.getElementById('botpress-chat-messages');
+
+            if (!chatInput || !sendBtn || !chatMessages) {
+                console.log('Botpress embedded chat elements not found');
+                return;
+            }
+
+            console.log('Initializing Botpress embedded chat');
+
+            // Function to add message to chat
+            function addMessage(text, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `flex gap-3 ${isUser ? 'justify-end' : ''}`;
+
+                if (isUser) {
+                    messageDiv.innerHTML = `
+                        <div class="bg-cca-lime text-cca-dark-blue rounded-lg rounded-tr-none p-4 max-w-xs">
+                            <p class="text-sm font-semibold">${text}</p>
+                        </div>
+                        <div class="w-8 h-8 bg-cca-lime text-cca-dark-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-xs font-bold">U</span>
+                        </div>
+                    `;
+                } else {
+                    messageDiv.innerHTML = `
+                        <div class="w-8 h-8 bg-cca-blue text-white rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-xs font-bold">AI</span>
+                        </div>
+                        <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 max-w-xs">
+                            <p class="text-sm">${text}</p>
+                        </div>
+                    `;
+                }
+
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            // Function to show typing indicator
+            function showTypingIndicator() {
+                const typingDiv = document.createElement('div');
+                typingDiv.className = 'flex gap-3';
+                typingDiv.id = 'botpress-typing-indicator';
+                typingDiv.innerHTML = `
+                    <div class="w-8 h-8 bg-cca-blue text-white rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-xs font-bold">AI</span>
                     </div>
-                    <div class="w-8 h-8 bg-cca-lime text-cca-dark-blue rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
-                        U
+                    <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 flex gap-2">
+                        <span class="w-2 h-2 bg-white rounded-full animate-bounce"></span>
+                        <span class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></span>
+                        <span class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
                     </div>
                 `;
-            } else {
-                messageDiv.innerHTML = `
-                    <div class="w-8 h-8 bg-cca-light-blue text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
-                        AI
-                    </div>
-                    <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 max-w-sm">
-                        <p class="text-sm whitespace-pre-wrap">${text}</p>
-                    </div>
-                `;
+                chatMessages.appendChild(typingDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
             }
-            
-            chatMessages.appendChild(messageDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        
-        // Function to show typing indicator
-        function showTypingIndicator() {
-            const typingDiv = document.createElement('div');
-            typingDiv.className = 'flex gap-3';
-            typingDiv.id = 'typing-indicator';
-            typingDiv.innerHTML = `
-                <div class="w-8 h-8 bg-cca-light-blue text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
-                    AI
-                </div>
-                <div class="bg-cca-light-blue text-white rounded-lg rounded-tl-none p-4 flex gap-2">
-                    <span class="w-2 h-2 bg-white rounded-full animate-bounce"></span>
-                    <span class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></span>
-                    <span class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
-                </div>
-            `;
-            chatMessages.appendChild(typingDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        
-        // Function to remove typing indicator
-        function removeTypingIndicator() {
-            const typing = document.getElementById('typing-indicator');
-            if (typing) {
-                typing.remove();
+
+            // Function to remove typing indicator
+            function removeTypingIndicator() {
+                const typing = document.getElementById('botpress-typing-indicator');
+                if (typing) {
+                    typing.remove();
+                }
             }
+
+            // Function to send message to Botpress
+            function sendMessageToBotpress(message) {
+                console.log('Sending message to Botpress:', message);
+
+                // Show typing indicator
+                showTypingIndicator();
+
+                // Send to both the floating widget and handle response
+                try {
+                    // Try to send to the floating Botpress widget
+                    if (window.botpressWebChat && window.botpressWebChat.sendMessage) {
+                        window.botpressWebChat.sendMessage(message);
+                        // For embedded chat, we'll simulate a response since we can't directly get responses
+                        setTimeout(() => {
+                            removeTypingIndicator();
+                            addMessage("Thanks for your message! I'm processing it in the chat widget above. Click the floating chat bubble to continue our conversation! 💬", false);
+                        }, 1500);
+                    } else {
+                        // Fallback: just show a message directing to the floating widget
+                        setTimeout(() => {
+                            removeTypingIndicator();
+                            addMessage("Please use the floating chat widget in the bottom-right corner for the full chatbot experience! Click the blue chat bubble to start chatting. 💬", false);
+                        }, 1000);
+                    }
+                } catch (error) {
+                    console.error('Error sending to Botpress:', error);
+                    removeTypingIndicator();
+                    addMessage("Sorry, there was an error. Please try using the floating chat widget instead! 💬", false);
+                }
+            }
+
+            // Function to handle sending message
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (!message) return;
+
+                // Add user message to embedded chat
+                addMessage(message, true);
+                chatInput.value = '';
+
+                // Send to Botpress
+                sendMessageToBotpress(message);
+            }
+
+            // Event listeners
+            sendBtn.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            console.log('Botpress embedded chat initialized');
+            botpressChatReady = true;
         }
-        
-        // Function to send message
-        function sendMessage() {
-            const userMessage = chatInput.value.trim();
-            
-            if (!userMessage) return;
-            
-            // Add user message
-            addMessage(userMessage, true);
-            chatInput.value = '';
-            
-            // Show typing indicator
-            showTypingIndicator();
-            
-            // Simulate agent thinking (500-1500ms delay)
+
+        function openBotpressChat() {
+            // First scroll to the chatbot section
+            const chatbotSection = document.getElementById('chatbot');
+            if (chatbotSection) {
+                chatbotSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Then try to open the Botpress chat widget
             setTimeout(() => {
-                removeTypingIndicator();
-                
-                // Get response based on user input
-                let response = mockResponses['default'];
-                
-                // Check if user message matches any predefined question
-                for (const question in mockResponses) {
-                    if (question !== 'default' && userMessage.toLowerCase().includes(question.toLowerCase())) {
-                        response = mockResponses[question];
-                        break;
+                if (window.botpressWebChat && window.botpressWebChat.open) {
+                    window.botpressWebChat.open();
+                } else if (window.bp && window.bp('open')) {
+                    window.bp('open');
+                } else {
+                    // Fallback: try to find and click the chat button
+                    const chatButton = document.querySelector('[data-botpress-chat-button]');
+                    if (chatButton) {
+                        chatButton.click();
+                    } else {
+                        // Last resort: look for common chat widget selectors
+                        const selectors = [
+                            '.bpw-floating-button',
+                            '.bpw-chat-button',
+                            '[class*="botpress"]',
+                            '[class*="bpw"]'
+                        ];
+                        for (const selector of selectors) {
+                            const element = document.querySelector(selector);
+                            if (element) {
+                                element.click();
+                                break;
+                            }
+                        }
                     }
                 }
-                
-                addMessage(response, false);
-            }, 800 + Math.random() * 700);
+            }, 800); // Wait for scroll to complete
         }
-        
-        // Send button click handler
-        sendBtn.addEventListener('click', sendMessage);
-        
-        // Enter key to send
-        chatInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-        
-        // Quick question buttons
-        quickQuestionBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const question = this.getAttribute('data-question');
-                chatInput.value = question;
-                sendMessage();
-            });
+
+        // Initialize embedded chat when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for Botpress to load, then initialize embedded chat
+            setTimeout(initBotpressEmbeddedChat, 2000);
         });
     </script>
+
+    <!-- Botpress Webchat Integration -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2026/01/11/18/20260111182416-LUPOIJH3.js" defer></script>
 </body>
 </html>
